@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>ChrisGames910</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Gamers Shop</h2>
+
+        <nav class="navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#carrito" onclick="mostrarCarrito()">Carrito</a>
+            <a href="https://www.freetetris.org/game.php" target="_blank">Ven y diviértete</a>
+            <button class="btn">Iniciar Sesión</button>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h1>Bienvenido a Gamers Shop</h1>
+        <p>Descubre las últimas novedades en juegos y equipos gaming. ¡Encuentra todo lo que necesitas para llevar tu experiencia de juego al siguiente nivel!</p>
+        <img src="img/banner.png" alt="Imagen de portada">
+        <p>Ofertas especiales por tiempo limitado. ¡No te lo pierdas!</p>
+        <a href="#productos" class="btn">Explorar Productos</a>
+    </section>
+
+    <div class="container" id="productos"></div>
+
+    <div id="carrito" class="oculto" class="carrito">
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total-carrito">0.00</span></p>
+    </div>
+    
+   <div class="fondo">
+    <span class="icono-cerrar"><i class="fa-solid fa-xmark"></i></span>
+
+    <div class="contenedor-form login">
+        <h2>Iniciar Sesión</h2>
+        <form action="#">
+            <div class="contenedor-input">
+                <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" required>
+                <label for="#">Email</label>
+            </div>
+
+            <div class="contenedor-input">
+                <span class="icono"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" required>
+                <label for="#">Contraseña</label>
+            </div>
+
+            <div class="recordar">
+                <label for="#"><input type="checkbox">Recordar Sesión</label>
+                <a href="#">¿Olvidé la Contraseña?</a>
+            </div>
+
+            <button type="submit" class="btn">Iniciar Sesión</button>
+
+            <div class="registrar">
+                <p>¿No tienes cuenta? <a href="#" class="registrar-link">Registrarse</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="contenedor-form registrar">
+        <h2>Registrarse</h2>
+        <form action="#">
+
+            <div class="contenedor-input">
+                <span class="icono"><i class="fa-solid fa-user"></i></span>
+                <input type="text" required>
+                <label for="#">Nombre de Usuario</label>
+            </div>
+
+
+            <div class="contenedor-input">
+                <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" required>
+                <label for="#">Email</label>
+            </div>
+
+            <div class="contenedor-input">
+                <span class="icono"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" required>
+                <label for="#">Contraseña</label>
+            </div>
+
+            <div class="recordar">
+                <label for="#"><input type="checkbox">Acepto los terminos y condiciones</label>
+            </div>
+
+            <button type="submit" class="btn">Registrarme</button>
+
+            <div class="registrar">
+                <p>¿Tienes una cuenta? <a href="#" class="login-link">Iniciar Sesión</a></p>
+            </div>
+        </form>
+    </div>
+   </div>
+   <section class="galery">
+    <img src="img/bf.jpg">
+    <img src="img/mc.jpg">
+    <img src="img/mf.jpg">
+    <img src="img/ttf.jpg">
+    <img src="img/pb.jpg">
+   </section>
+
+   <script src="app.js"></script>
+   <script src="script.js"></script>
+   
+</body>
+</html>
